@@ -3,7 +3,11 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node app.js"
+    "start": "cake start"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "http://github.com/simple10/contact.git"
   },
   "dependencies": {
     "express": "~3.2.6",
@@ -13,8 +17,11 @@
     "coffee-script": "~1.6.3",
     "connect-assets": "~2.4"
   },
-  "repository": {
-    "type" : "git",
-    "url" : "http://github.com/simple10/contact.git"
+  "devDependencies": {
+    "node-dev": "~2.0.1",
+    "mocha": "~1.11.0",
+    "should": "~1.2.2",
+    "npmedge": "~0.1.3",
+    "superagent": "~0.14.7"
   }
 }
