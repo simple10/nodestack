@@ -15,7 +15,8 @@
     "stylus": "*",
     "nib": "*",
     "coffee-script": "~1.6.3",
-    "connect-assets": "~2.4"
+    "connect-assets": "~2.4",
+    "fashionista": "~0.3.0"
   },
   "devDependencies": {
     "node-dev": "~2.0.1",

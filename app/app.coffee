@@ -8,6 +8,9 @@ express = require('express')
 http = require('http')
 path = require('path')
 app = express()
+fashionista = require('fashionista')
+
+fashionista().decorate(app)
 
 app.configure ->
   app.set 'port', PORT
