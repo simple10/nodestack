@@ -13,5 +13,8 @@
     "coffee-script": "~1.6.3",
     "connect-assets": "~2.4"
   },
+  "repository": {
+    "type" : "git",
+    "url" : "http://github.com/simple10/contact.git"
   }
 }
