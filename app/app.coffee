@@ -10,7 +10,7 @@ path = require('path')
 app = express()
 fashionista = require('fashionista')
 
-fashionista().decorate(app)
+fashionista(path: '/themes').decorate(app)
 
 app.configure ->
   app.set 'port', PORT
