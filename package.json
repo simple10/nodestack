@@ -6,17 +6,17 @@
     "start": "cake start"
   },
   "repository": {
-    "type" : "git",
-    "url" : "http://github.com/simple10/contact.git"
+    "type": "git",
+    "url": "http://github.com/simple10/contact.git"
   },
   "dependencies": {
     "express": "~3.2.6",
     "jade": "*",
     "stylus": "*",
+    "stylus-type-utils": "0.0.3",
     "nib": "*",
     "coffee-script": "~1.6.3",
-    "connect-assets": "~2.4",
-    "fashionista": "~0.3.0"
+    "connect-assets": "~2.4"
   },
   "devDependencies": {
     "node-dev": "~2.0.1",

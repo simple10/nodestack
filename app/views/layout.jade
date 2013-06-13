@@ -3,8 +3,12 @@ html(lang='en')
   head
     title= title
     != css('style')
+    != js('head')
   body
     block content
+    script(type='text/javascript')
+      var z = '!{js('vendor/zepto').match(/src="(.*)"/)[1]}',
+          j = '!{js('vendor/jquery').match(/src="(.*)"/)[1]}';
+      document.write('<script src=' + ('__proto__' in {} ? z : j) +'><\/script>')
     block js
       != js('app')
-      script(type='text/javascript', src='/themes')

@@ -7,10 +7,8 @@ Module dependencies.
 express = require('express')
 http = require('http')
 path = require('path')
+assets = require('connect-assets')
 app = express()
-fashionista = require('fashionista')
-
-fashionista(path: '/themes').decorate(app)
 
 app.configure ->
   app.set 'port', PORT
@@ -23,7 +21,11 @@ app.configure ->
   #app.use express.cookieParser('your secret here')
   #app.use express.session()
   app.use app.router
-  app.use require('connect-assets')(src: path.join(__dirname, 'assets'))
+  app.use assets
+    #build: true # compile assets into builtAssets dir
+    src: path.join(__dirname, 'assets')
+    stylusExtends: (style) ->
+      style.include require('stylus-type-utils').path
   app.use express.static path.join(__dirname, 'public')
   require('./middleware/404')(app)
 
