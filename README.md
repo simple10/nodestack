@@ -82,16 +82,16 @@ Just like the Rails asset pipeline.
 # compile assets into the builtAssets directory
 cake precompile
 
+# lock down the modules versions
+# this is analogous to Gemfile.lock in ruby
+npm shrinkwrap
+
 git add .
 git commit -m "Compile assets for production"
 
 # deploy to heroku
 git push heroku master
 ```
-
-Since package.json does not specify specific npm module versions, it's a good idea to remove
-npm_modules from .gitignore. This will ensure the same modules are running in development and
-production.
 
 
 # Code Layout
