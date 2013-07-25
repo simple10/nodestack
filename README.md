@@ -12,7 +12,7 @@ and predictable code layout without all the hidden magic.
 * [Jade](http://jade-lang.com/) - better HAML
 * [Stylus](http://learnboost.github.io/stylus/) - better SASS
 * [Nib](https://github.com/visionmedia/nib) - stylus mixins
-* [Foundation](http://foundation.zurb.com/) - front-end framework
+* [Foundation](https://github.com/blai/foundation) - stylus port of [Foundation](http://foundation.zurb.com/) front-end framework
 
 ### Non-features
 
@@ -88,3 +88,21 @@ Since package.json does not specify specific npm module versions, it's a good id
 npm_modules from .gitignore. This will ensure the same modules are running in development and
 production.
 
+# Updating Foundation
+
+NodeStack includes a [stylus port](https://github.com/blai/foundation.git) of Zurb Foundation.
+
+```bash
+# from parent directory of nodestack
+git clone https://github.com/blai/foundation.git
+cp foundation/stylus/*.styl nodestack/app/assets/css/vendor/
+cp -a foundation/js/foundation nodestack/app/assets/js/vendor
+cp foundation/js/vendor/custom.modernizr.js nodestack/app/assets/js/vendor/modernizr.custom.js
+```
+
+# Switching to Twitter Bootstrap
+
+See [Connect Assets](https://github.com/adunkman/connect-assets) for serving Bootstrap from an
+npm module.
+
+Once you switch to Bootstrap, remove the app/assets/[css|js]/vendor foundation files.
