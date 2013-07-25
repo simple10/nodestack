@@ -43,6 +43,7 @@ cd nodestack
 npm install
 ```
 
+
 # Development
 
 NodeStack uses cake to start an express server. Cake is the Node equivalent of rake.
@@ -52,7 +53,10 @@ NodeStack uses cake to start an express server. Cake is the Node equivalent of r
 npm start
 ```
 
-http://localhost:3000
+[localhost:3000](http://localhost:3000)
+
+
+### How It Works
 
 The command `npm start` is just an alias for `cake start`. See package.json "scripts" section.
 By convention, startup scripts are defined in package.json to make them easy to find.
@@ -65,11 +69,11 @@ Express is built on top of [connect](http://www.senchalabs.org/connect/) which i
 to rack. Connect is a middleware framework. All the work handling cookies, sessions, assets,
 etc. is performed in optional middleware.
 
-Connect Assets is connect middleware that handles compiling assets (CoffeeScript, Jade
+Connect Assets is middleware that handles compiling assets (CoffeeScript, Jade
 templates, Stylus stylesheets, etc.) on the fly or to disk.
 
 Connect Assets compiles assets into the **builtAssets** directory if the build config option
-is set to true in app.coffee.
+is set to true in app/app.coffee.
 
 For development, build is turned off to make it easier to inspect and debug JavaScript and
 CSS. Alternatively, build could be turned on by default and source files used for debugging.
