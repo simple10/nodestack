@@ -22,7 +22,7 @@ app.configure ->
   #app.use express.session()
   app.use app.router
   app.use assets
-    #build: true # compile assets into builtAssets dir
+    build: process.env.NODE_ENV == 'production'
     src: path.join(__dirname, 'assets')
     stylusExtends: (style) ->
       style.include require('stylus-type-utils').path

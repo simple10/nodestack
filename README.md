@@ -79,6 +79,12 @@ Precompiling assets for production will combine and uglify javascript and styles
 Just like the Rails asset pipeline.
 
 ```bash
+# make sure NODE_ENV is set on heroku
+heroku config:set NODE_ENV=production
+
+# switch to a branch (optional)
+git checkout -b production
+
 # compile assets into the builtAssets directory
 cake precompile
 
@@ -90,7 +96,7 @@ git add .
 git commit -m "Compile assets for production"
 
 # deploy to heroku
-git push heroku master
+git push heroku production:master
 ```
 
 Example: http://nodestack.herokuapp.com/
