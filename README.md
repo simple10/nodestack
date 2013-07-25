@@ -12,6 +12,7 @@ Starter stack for Rails developers.
 * [Stylus](http://learnboost.github.io/stylus/) - better SASS
 * [Nib](https://github.com/visionmedia/nib) - stylus mixins
 
+
 # Installation
 
 Node.js and npm must already be installed.
@@ -42,4 +43,27 @@ to rack. Connect is a middleware framework where plugins (middleware) do all the
 handling cookies, sessions, assets, etc. Connect Assets is connect middleware that handles
 compiling assets (CoffeeScript, Jade templates, Stylus stylesheets, etc.) on the fly.
 
+Connect Assets compiles assets into the builtAssets directory if the build config option
+is set to true in app.coffee. For development, build is turned off to make it easier to
+inspect and debug JavaScript and CSS. Alternatively, build could be turned on by default
+and source files used for debugging.
+
+
+# Production
+
+As a best practice (and required for Heroku), precompile assets before deploying to production.
+
+Compiling assets will combine and uglify javascript and stylesheet files. Just like the 
+Rails asset pipeline.
+
+```bash
+# compile assets into the builtAssets directory
+cake precompile
+
+git add .
+git commit -m "Compile assets for production"
+
+# deploy to heroku
+git push heroku master
+```
 
