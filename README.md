@@ -12,3 +12,13 @@ Starter stack for Rails developers.
 * [Stylus](http://learnboost.github.io/stylus/) - better SASS
 * [Nib](https://github.com/visionmedia/nib) - stylus mixins
 
+# Installation
+
+Node.js and npm must already be installed.
+
+```bash
+git clone https://github.com/simple10/nodestack.git
+cd nodestack
+npm install
+```
+
