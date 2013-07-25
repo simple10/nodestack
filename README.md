@@ -93,6 +93,8 @@ git commit -m "Compile assets for production"
 git push heroku master
 ```
 
+Example: http://nodestack.herokuapp.com/
+
 
 # Code Layout
 
