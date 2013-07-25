@@ -1,8 +1,12 @@
 NodeStack
 =======
 
-Minimalist Node.js skeleton. All the benefits of the Rails asset pipeline
-and predictable code layout without all the hidden magic.
+Node.js assets pipeline skeleton.
+
+NodeStack is a minimalist skeleton designed to get up and running quickly with a
+CoffeeScript + Jade + Stylus web app. It includes all the benefits of the
+Rails assets pipeline and predictable assets code layout without all the
+hidden magic and clutter.
 
 ### Features
 
@@ -17,7 +21,7 @@ and predictable code layout without all the hidden magic.
 
 ### Non-features
 
-* ORM/ActiveRecord - add your ORM of choice as needed
+* ORM - add your ORM of choice as needed
 * Pretty much anything else not explicitly mentioned in features
 
 The goal of NodeStack is to be as minimal as possible to reduce the clutter and learning
@@ -105,7 +109,7 @@ Example: http://nodestack.herokuapp.com/
 
 # Code Layout
 
-NodeStack tries to mimic Rails code layout.
+NodeStack tries to mimic Rails code layout for assets.
 
 ```bash
 # routes
@@ -121,16 +125,18 @@ app/assets/css
 
 # Front-end Frameworks
 
-By default, Zepto and Foundation are installed.
+By default, Zepto and Foundation are enabled.
 
 To switch to jQuery, change the require statement in app/assets/js/app.coffee.
 
-Note that jQuery 2.x is included which does not work in older browsers.
+jQuery 2.x is included which does not work in older browsers.
 If needed, download and use jQuery 1.x instead.
 
 ### Updating Foundation
 
 NodeStack includes a [stylus port](https://github.com/blai/foundation.git) of Zurb Foundation.
+To update Foundation, download the latest files from Github and copy them into the appropriate
+vendor directories.
 
 ```bash
 # from parent directory of nodestack
