@@ -84,5 +84,7 @@ git commit -m "Compile assets for production"
 git push heroku master
 ```
 
+Since package.json does not specify specific npm module versions, it's a good idea to remove
+npm_modules from .gitignore. This will ensure the same modules are running in development and
+production.
 
-Enjoy!
