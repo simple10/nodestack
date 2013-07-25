@@ -1,9 +1,10 @@
 NodeStack
 =======
 
-Starter stack for Rails developers.
+Starter node stack for Rails developers. All the benefits of the Rails asset pipeline
+and predictable code layout without all the hidden magic.
 
-**Features**
+### Features
 
 * [Express](http://expressjs.com/) - web server
 * [Connect Assets](https://github.com/adunkman/connect-assets) - asset pipeline
@@ -11,6 +12,15 @@ Starter stack for Rails developers.
 * [Jade](http://jade-lang.com/) - better HAML
 * [Stylus](http://learnboost.github.io/stylus/) - better SASS
 * [Nib](https://github.com/visionmedia/nib) - stylus mixins
+
+
+### Non-features
+
+* ORM/ActiveRecord - add your ORM of choice as needed
+* Pretty much anything else not explicitly mentioned in features
+
+The goal of NodeStack is to be as minimal as possible to reduce the clutter and learning
+curve while maximizing performance and memory footprint.
 
 
 # Installation
