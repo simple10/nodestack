@@ -12,7 +12,7 @@ and predictable code layout without all the hidden magic.
 * [Jade](http://jade-lang.com/) - better HAML
 * [Stylus](http://learnboost.github.io/stylus/) - better SASS
 * [Nib](https://github.com/visionmedia/nib) - stylus mixins
-
+* [Foundation](http://foundation.zurb.com/) - front-end framework
 
 ### Non-features
 
