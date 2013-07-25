@@ -88,6 +88,23 @@ Since package.json does not specify specific npm module versions, it's a good id
 npm_modules from .gitignore. This will ensure the same modules are running in development and
 production.
 
+
+# Code Layout
+
+NodeStack tries to mimic Rails code layout.
+
+```bash
+# routes
+config/routes.coffee
+
+# javascript
+app/assets/js
+
+# css
+app/assets/css
+```
+
+
 # Updating Foundation
 
 NodeStack includes a [stylus port](https://github.com/blai/foundation.git) of Zurb Foundation.
@@ -106,3 +123,5 @@ See [Connect Assets](https://github.com/adunkman/connect-assets) for serving Boo
 npm module.
 
 Once you switch to Bootstrap, remove the app/assets/[css|js]/vendor foundation files.
+
+
