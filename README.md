@@ -1,7 +1,7 @@
 NodeStack
 =======
 
-Starter node stack for Rails developers. All the benefits of the Rails asset pipeline
+Minimalist Node.js skeleton. All the benefits of the Rails asset pipeline
 and predictable code layout without all the hidden magic.
 
 ### Features
@@ -21,6 +21,11 @@ and predictable code layout without all the hidden magic.
 
 The goal of NodeStack is to be as minimal as possible to reduce the clutter and learning
 curve while maximizing performance and memory footprint.
+
+### Alternatives
+
+* https://github.com/dweldon/frappe
+* https://nodejsmodules.org/tags/skeleton
 
 
 # Installation
