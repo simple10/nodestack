@@ -1,3 +1,6 @@
+#=require vendor/zepto
+# OR vendor/jquery
+
 #=require vendor/foundation/foundation
 #=require vendor/foundation/foundation.alerts
 #=require vendor/foundation/foundation.clearing
