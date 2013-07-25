@@ -13,6 +13,7 @@ and predictable code layout without all the hidden magic.
 * [Stylus](http://learnboost.github.io/stylus/) - better SASS
 * [Nib](https://github.com/visionmedia/nib) - stylus mixins
 * [Foundation](https://github.com/blai/foundation) - stylus port of [Foundation](http://foundation.zurb.com/) front-end framework
+* [Zepto](http://zeptojs.com/) or [jQuery](http://jquery.com/) support
 
 ### Non-features
 
@@ -118,7 +119,16 @@ app/assets/css
 ```
 
 
-# Updating Foundation
+# Front-end Frameworks
+
+By default, Zepto and Foundation are installed.
+
+To switch to jQuery, change the require statement in app/assets/js/app.coffee.
+
+Note that jQuery 2.x is included which does not work in older browsers.
+If needed, download and use jQuery 1.x instead.
+
+### Updating Foundation
 
 NodeStack includes a [stylus port](https://github.com/blai/foundation.git) of Zurb Foundation.
 
@@ -130,7 +140,7 @@ cp -a foundation/js/foundation nodestack/app/assets/js/vendor
 cp foundation/js/vendor/custom.modernizr.js nodestack/app/assets/js/vendor/modernizr.custom.js
 ```
 
-# Switching to Twitter Bootstrap
+### Switching to Twitter Bootstrap
 
 See [Connect Assets](https://github.com/adunkman/connect-assets) for serving Bootstrap from an
 npm module.
