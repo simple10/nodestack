@@ -5,8 +5,7 @@ Node.js assets pipeline skeleton.
 
 NodeStack is a minimalist skeleton designed to get up and running quickly with a
 CoffeeScript + Jade + Stylus web app. It includes all the benefits of the
-Rails assets pipeline and predictable assets code layout without all the
-hidden magic and clutter.
+Rails assets pipeline and predictable assets code layout without any cruft.
 
 ### Features
 
@@ -17,15 +16,15 @@ hidden magic and clutter.
 * [Stylus](http://learnboost.github.io/stylus/) - better SASS
 * [Nib](https://github.com/visionmedia/nib) - stylus mixins
 * [Foundation](https://github.com/blai/foundation) - stylus port of [Foundation](http://foundation.zurb.com/) front-end framework
-* [Zepto](http://zeptojs.com/) or [jQuery](http://jquery.com/) support
+* [Zepto](http://zeptojs.com/) or [jQuery](http://jquery.com/) – Zepto is enabled by default
 
 ### Non-features
 
 * ORM - add your ORM of choice as needed
 * Pretty much anything else not explicitly mentioned in features
 
-The goal of NodeStack is to be as minimal as possible to reduce the clutter and learning
-curve while maximizing performance and memory footprint.
+The goal of NodeStack is to be as minimal as possible while providing the
+niceties of an assets pipeline.
 
 ### Alternatives
 
@@ -46,7 +45,7 @@ npm install
 
 # Development
 
-NodeStack uses cake to start an express server. Cake is the Node equivalent of rake.
+NodeStack uses cake to start an express server. Cake is the Node.js equivalent of rake.
 
 ```bash
 # Start web server on port 3000
@@ -113,7 +112,7 @@ Example: http://nodestack.herokuapp.com/
 
 # Code Layout
 
-NodeStack tries to mimic Rails code layout for assets.
+NodeStack mimics Rails code layout for routes and assets.
 
 ```bash
 # routes
@@ -121,9 +120,17 @@ config/routes.coffee
 
 # javascript
 app/assets/js
+  head.coffee    # included in HEAD
+  app.coffee     # included at bottom of BODY
+                 # add your app scripts to app.coffee
+  vendor/        # selectively required in app.coffee
 
 # css
 app/assets/css
+  app.styl       # included in HEAD
+                 # add your app stylesheets to style.styl
+  variables.styl # your app variables
+  vendor/        # selectively required in style.styl
 ```
 
 

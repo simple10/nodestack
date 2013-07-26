@@ -16,3 +16,7 @@
 #=require vendor/foundation/foundation.tooltips
 #=require vendor/foundation/foundation.topbar
 #=require vendor/foundation/foundation.interchange
+
+#
+# REQUIRE YOUR APP SCRIPTS HERE
+#
