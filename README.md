@@ -128,9 +128,9 @@ app/assets/js
 # css
 app/assets/css
   app.styl       # included in HEAD
-                 # add your app stylesheets to style.styl
+                 # add your app stylesheets to app.styl
   variables.styl # your app variables
-  vendor/        # selectively required in style.styl
+  vendor/        # selectively required in app.styl
 ```
 
 
