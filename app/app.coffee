@@ -15,14 +15,14 @@ app.configure ->
   app.set 'views', "#{__dirname}/views"
   app.set 'view engine', 'jade'
   app.use express.favicon()
-  app.use express.logger('dev')
+  app.use express.logger('dev') if app.get('env') is 'development'
   app.use express.bodyParser()
   app.use express.methodOverride()
   #app.use express.cookieParser('your secret here')
   #app.use express.session()
   app.use app.router
   app.use assets
-    build: process.env.NODE_ENV == 'production'
+    build: app.get('env') is 'production' # true or false
     src: path.join(__dirname, 'assets')
     stylusExtends: (style) ->
       style.include require('stylus-type-utils').path
