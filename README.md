@@ -139,6 +139,18 @@ app/public
 ```
 
 
+# Tests
+
+[Mocha](http://visionmedia.github.io/mocha/) is installed as the recommended test suite.
+
+Tests are in the app/tests directory.
+
+```bash
+# Run tests
+cake test
+```
+
+
 # Front-end Frameworks
 
 By default, Zepto and Foundation are enabled.
