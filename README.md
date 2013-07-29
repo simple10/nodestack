@@ -131,6 +131,11 @@ app/assets/css
                  # add your app stylesheets to app.styl
   variables.styl # your app variables
   vendor/        # selectively required in app.styl
+
+# static assets
+app/public
+  # any file or dir here will be served from root
+  /img/test.png  # http://localhost:3000/img/test.png
 ```
 
 
