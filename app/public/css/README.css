@@ -1,0 +1,11 @@
+/*
+Place vendor CSS files in this directory to be served as a static asset.
+It's better to put non-minified CSS in assets/css/vendor and let
+the assets pipeline manage the files.
+
+Files in this directory are served from /css base URL.
+
+e.g.
+public/css/README.css
+http://localhost:3000/css/README.css
+*/
